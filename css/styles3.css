@@ -1,0 +1,312 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: nanumsquare, sans-serif;
+  }
+  a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  header {
+    background-color: #111;
+    height: 67px;
+    min-width: 600px;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .search:hover{
+      opacity: calc(0.3);
+  }
+
+  header .menu_img:hover{
+      opacity: calc(0.3);
+  }
+  header .list_login:hover{
+      opacity: calc(0.3);
+  }
+
+  .list_menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .list_menu li a {
+    margin-right: 16px;
+    margin-left: 16px;
+  }
+  
+  .list_login {
+    font-size: 24px;
+    margin-right: 20px;
+  }
+  .menu{
+    background-color: #111;
+    height: 60px;
+    min-width: 600px;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu a{
+      font-size: 12px;
+      margin-left: 80px;
+      margin-right: 80px;
+
+  }
+  .menu a:hover{
+    opacity: calc(0.3);
+  }
+  .button{
+      display: flex;
+      align-items: center;
+  }
+  
+  .button .search{
+      margin-left: 20px;
+  }
+  .button .menu_img{
+      margin-left: 20px;
+  }
+  .line{
+      height: 1px;
+      min-width: 600px;
+      background-color: #F2F2F2;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    min-width: 600px;
+    height: 80vh;
+    min-height: 450px;
+    background-image: linear-gradient( rgba(0,0,0,0.1), rgba(0,0,0,0.1) ), url(https://i.postimg.cc/25HRzFnw/hero-img.jpg);
+    background-position: center;
+    background-size: cover;
+    max-width: 1426px;
+
+    animation:container 9s infinite;
+    animation-direction:alternate;
+    }
+
+    @keyframes container {
+    0% {
+        background:url(https://i.postimg.cc/25HRzFnw/hero-img.jpg);
+        background-size:cover;
+        background-position:center center;
+        color: #D9D9D9;
+    } 
+
+    50% {
+        background:url(https://i.postimg.cc/14hcnHvz/hero-img3.png);
+        background-size:cover;
+        background-position:center center;
+        color: #1C3240;
+    }
+    100% {
+        background:url(https://i.postimg.cc/PJL28NhS/hero-img2.png); 
+        background-size:cover;
+        background-position:center center;
+    }
+
+}
+
+    .container p{
+      color: #D9D9D9;
+      display: block;
+      display: flex;
+      font-size: 40px;
+      letter-spacing: 96px;
+      margin-left: auto;
+      margin-right: auto;
+      min-width: 600px;
+      display: block;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .fade_out_box {
+    display: inline-block;
+    padding: 10px;
+    animation: fadeout 9s infinite;
+    animation-direction:alternate;
+    animation-fill-mode: forwards;
+    }
+    @keyframes fadeout {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+
+
+  .artist_recommend{
+
+        width: 99vw;
+        min-width: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 36px 18px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .artist_list {
+        width: 249px;
+        flex: 0 0 calc((100%-54px)/4);
+    }    
+    .muse{
+        max-width: 244px;
+        max-height: 243px;
+    }
+  h1{
+        flex: 0 0 100%;
+        margin-top: 70px;
+        margin-bottom: 50px;
+        text-align: center;
+        color: #333;
+    }
+
+    .play_list {
+    width: 1040px;
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 32px;
+    }
+
+    .item {
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        flex: 0 0 300px;
+        padding: 15px;
+
+    }
+
+    .item .item-image {
+        width: 300px;
+        transition: transform 0.3s;
+        z-index: -5;
+    }
+
+    .item:hover .item-image {
+        transform: scale(1.1);
+        opacity: 50%;
+    }
+
+    .item {
+        position: relative;
+    }
+    .footer{
+        height: 133px;
+        background-color: #000;
+        margin-top: 60px;
+    }
+    .gray_var{
+        background-color: #D9D9D9;
+        height: 3px;
+        width: 80vw;
+        margin-top: 18px;
+        margin-left: 136.5px;
+        display: inline-block;
+    }
+    .gray_var3{
+        background-color: #D9D9D9;
+        height: 1px;
+        width: 80vw;
+        margin-top: 30px;
+        margin-left: 136.5px;
+        display: inline-block;
+        margin-bottom: 50px;
+    }
+    .tooter_box{
+        margin-left: 136.5px;
+        margin-top: -40px;
+    }
+    .under_box{
+        margin-top: 20px;
+    }
+    .high_box{
+        width: 80vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sns{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    .sns img{
+        margin-right: 5px;
+    }
+    .footer_text1{
+        width: 80vw;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    .footer_text1 p{
+        font-size: 8px;
+        color: #CACACA;
+    }
+    .footer_text2{
+        width: 50vw;
+        height: 24px;
+        line-height: 4px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-wrap : wrap;
+        margin-top: 20px    ;
+        
+    }
+    .footer_text2 p{
+        font-size: 8px;
+        color: #717171;
+    }
+    .company{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    .company img{
+        margin-right: 4px;
+        width: 8px;
+        height: 8px;
+        margin-bottom: 2px;
+    }
+    .gray_var_small2{
+        width: 1px;
+        height: 10px;
+        background-color: #CACACA;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .gray_var_small3{
+        width: 1px;
+        height: 10px;
+        background-color: #717171;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
